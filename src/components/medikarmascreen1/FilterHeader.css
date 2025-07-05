@@ -1,0 +1,87 @@
+.filter-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 24px;
+}
+
+.filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  color: #aaa;
+  border: none;
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  transition: color 0.2s, font-weight 0.2s;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+.filter-btn.active {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Optional: add a little hover effect */
+.filter-btn:hover {
+  color: #fff;
+}
+
+.filter-btn.active .circle {
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+
+.filter-btn .circle {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #666;
+  background-color: transparent;
+  display: inline-block;
+    clip-path: polygon(
+    50% 0%,   
+    90% 20%,  
+    100% 60%, 
+    70% 100%, 
+    30% 100%, 
+    0% 60%,   
+    10% 20%   
+  );
+}
+.filter-btn .circle-thick {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 3px solid #666;
+  background-color: transparent;
+  display: inline-block;
+}
+
+/* Alternative with blue color like in your image */
+.filter-btn .circle-blue {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #4a90e2;
+  background-color: transparent;
+  display: inline-block;
+}
+
+.circle-active {
+  box-shadow: 0 0 0 2px black, 0 0 0 4px #7e5bef;
+}
+.filter-btn:nth-child(3) .circle {
+  background: radial-gradient(circle at center, #7e5bef, #00f0ff);
+}
+.filter-btn:nth-child(1) .circle {
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+}
+
+.filter-btn:nth-child(2) .circle {
+  background: #666;
+}

@@ -1,0 +1,102 @@
+/* RadarChartWithLabels.css */
+
+.radar-wrapper {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0px auto;
+}
+
+/* .radar-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+  border-radius: 20px;
+} */
+
+.chart-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  filter: drop-shadow(0 0 20px rgba(255, 100, 255, 0.3));
+
+}
+
+.chart-container canvas {
+  position: relative;
+  z-index: 2;
+}
+
+.label {
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  pointer-events: none;
+}
+
+
+.label.right {
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.label.left {
+  left: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+ .label.top {
+  top: 6%;
+  left: 33%;
+}
+
+.label.top-right {
+  top: 12%;
+  right: 21%;
+}
+
+.label.bottom-right {
+  bottom: 22%;
+  right: 21%;
+}
+
+.label.bottom {
+  bottom: 8%;
+  left: 50%;
+}
+
+.label.bottom-left {
+  bottom: 23%;
+  left: 21%;
+}
+
+.label.top-left {
+  top: 11%;
+  left: 14%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .radar-wrapper {
+    width: 370px;
+    height: 370px;
+    padding: 10px;
+  }
+  
+  .label {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .label {
+    font-size: 20px;
+  }
+}

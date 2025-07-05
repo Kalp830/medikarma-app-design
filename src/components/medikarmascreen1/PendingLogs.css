@@ -1,0 +1,77 @@
+
+.card-custom .icon {
+  font-size: 24px;
+}
+.card-custom .duration {
+  font-size: 28px;
+  font-weight: 800;
+}
+.card-custom img {
+ width: 2.5rem;
+}
+.card-custom .title{
+  font-size: 0.85rem;
+}
+.card-custom .time{
+   font-size: 0.75rem;
+}
+.card-custom button{
+  font-size: 0.65rem !important;
+}
+
+.log-scroll-wrapper {
+  display: flex;
+  gap: 0.40rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  width: 100%;
+  max-width: 100%;
+  padding: 1rem;
+}
+
+.log-card {
+  flex: 0 0 auto;
+  scroll-snap-align: start;
+  margin: 0;
+}
+
+.card-custom {
+  background: rgba(255, 255, 255, 26%) !important;
+  color: white !important;
+  border-radius: 20px !important;
+  padding: 0.85rem;
+  margin-top: 0.65rem;
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box; /* 👈 ensures padding doesn’t overflow */
+}
+
+.btn-confirm {
+  /* background: linear-gradient(90deg, #2b8db1, #4f6f9c); */
+  background: linear-gradient(to right, #05CCFF, #555EC1);
+  border: none;
+  color: white;
+  border-radius: 50px !important;
+  font-size: 1.2rem !important;
+
+}
+
+.btn-dismiss {
+  /* background: linear-gradient(90deg, hsla(209, 31%, 42%, 1) 0%, hsla(265, 47%, 52%, 1) 100%); */
+  background: linear-gradient(to right, #3D608B, #B01EFF);
+  border: none;
+  color: white;
+  border-radius: 50px !important;
+  font-size: 1.2rem !important;
+}
+
+.padding-log h5{
+   font-family: "Montserrat", sans-serif; 
+   font-weight: normal;
+}
+.ff-comfortaa{
+  font-family: "Comfortaa", sans-serif;
+
+}
+
