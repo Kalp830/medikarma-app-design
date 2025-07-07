@@ -26,7 +26,15 @@ const RadarChart = () => {
   const chartRef = useRef(null);
 
   const data = {
-    labels: ['sleep', 'resilience', 'activity', 'calm', 'readiness', 'cardiac'],
+        labels: [
+         ['sleep', '88'], 
+         ['★75', 'resilience'], 
+         ['50', 'activity'],
+         ['calm', '50'], 
+         ['readiness', '★80'], 
+         ['cardiac', '★95'], 
+        ],
+
     datasets: [
       {
         label: 'Outline',
@@ -79,14 +87,12 @@ const RadarChart = () => {
   const options = {
     responsive: true,
     maintainAspectRatio: true,
-    
     scales: {
       r: {
         min: 0,
         max: 100,
         beginAtZero: true,
-        startAngle: 90, // <-- This rotates the entire radar grid 90 degrees
-        
+        startAngle: 90,
         ticks: { 
           display: false,
           stepSize: 50
@@ -94,7 +100,6 @@ const RadarChart = () => {
         grid: { 
           color: 'rgba(255, 255, 255, 0.3)',
           lineWidth: 1,
-         
         },
         angleLines: { 
           color: 'rgba(255, 255, 255, 0.1)',
@@ -105,7 +110,6 @@ const RadarChart = () => {
           font: { 
             size: 14,
             weight: 'normal',
-      
           },
           padding: 30
         }
@@ -114,7 +118,6 @@ const RadarChart = () => {
     plugins: {
       legend: { display: false }
     },
-
   };
 
   return (
