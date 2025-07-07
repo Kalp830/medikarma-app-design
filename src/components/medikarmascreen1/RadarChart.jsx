@@ -119,15 +119,6 @@ const RadarChart = () => {
 
   return (
     <div className="radar-wrapper">
-      {/* Enhanced value labels positioned around the chart */}
-      {/* <div className="label top-left">★80</div>
-      <div className="label top-right">★95</div>
-      <div className="label right">88</div>
-      <div className="label bottom-right">★75</div>
-      <div className="label bottom-left">50</div>
-      <div className="label left">50</div> */}
-     
-
       <div className="chart-container">
         <Radar ref={chartRef} data={data} options={options} />
       </div>

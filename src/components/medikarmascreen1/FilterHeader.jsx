@@ -7,7 +7,7 @@ function FilterHeader() {
   const [activeFilter, setActiveFilter] = useState('All');
 
   return (
-    <div className="filter-container">
+    <div className="filter-container d-flex justify-content-between">
       {filters.map((item, index) => (
         <button
           key={index}

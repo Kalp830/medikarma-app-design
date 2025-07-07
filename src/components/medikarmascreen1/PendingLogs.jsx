@@ -35,7 +35,7 @@ const logs = [
 
 function PendingLogs() {
   return (
-    <div className="text-white pb-4 mt-4">
+    <div className="text-white">
       <h5 className='mb-0'>Review Pending Logs</h5>
       <div className="log-scroll-wrapper">
         {logs.map((log, index) => (
